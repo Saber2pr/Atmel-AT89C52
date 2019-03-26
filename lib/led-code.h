@@ -1,5 +1,13 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-03-26 21:55:24 
+ * @Last Modified by:   saber2pr 
+ * @Last Modified time: 2019-03-26 21:55:24 
+ */
 #if !defined(LED_CODE)
 #define LED_CODE
+
+#define NixieLight P0
 
 // 共阴极
 #define OFF 0x00
