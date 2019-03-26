@@ -1,19 +1,19 @@
 /*
  * @Author: saber2pr 
  * @Date: 2019-03-26 21:54:50 
- * @Last Modified by:   saber2pr 
- * @Last Modified time: 2019-03-26 21:54:50 
+ * @Last Modified by: saber2pr
+ * @Last Modified time: 2019-03-26 22:15:09
  */
 #include "../lib/REG51.H"
 #include "../lib/delay.h"
-#include "../lib/led-code.h"
+#include "../lib/nixie-code.h"
 
 #define LEN 10
-#define Target P0
+
+unsigned char NL_list[LEN] = {NL_1, NL_6, NL_0, NL_1, NL_0, NL_5, NL_4, NL_2, NL_2, NL_1};
 
 void main()
 {
-  unsigned char led[LEN] = {Led_1, Led_6, Led_0, Led_1, Led_0, Led_5, Led_4, Led_2, Led_2, Led_1};
   unsigned int current = 0;
   while (1)
   {
@@ -22,11 +22,9 @@ void main()
       current = 0;
     }
 
-    Target = OFF;
-
+    NixieLight = OFF;
     delay(SECOND);
-
-    Target = led[current];
+    NixieLight = NL_list[current];
 
     ++current;
 
