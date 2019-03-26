@@ -10,7 +10,8 @@ unsigned char led[LEN] = {Led_0, Led_1, Led_0, Led_5, Led_4, Led_2, Led_2, Led_1
 
 void display(unsigned int current)
 {
-  select(current);
+  Target = OFF;
+  delay(100);
   Target = led[current];
 }
 
@@ -25,9 +26,10 @@ void main()
       current = 0;
     }
 
-    display(current);
+    select(current);
+    display(LEN - 1 - current);
     ++current;
 
-    delay(SECOND);
+    delay(100);
   }
 }
