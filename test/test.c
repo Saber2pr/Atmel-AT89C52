@@ -1,8 +1,12 @@
 #include <stdio.h>
-#include "../lib/dectobin.h"
 
 void main()
 {
-  unsigned int res = 201;
-  printf("%d", res / 100 % 10);
+  // int num = 1234;
+  // int current = num;
+  // while (current)
+  // {
+  //   printf("%d\n", current);
+  //   current = current / 10;
+  // }
 }

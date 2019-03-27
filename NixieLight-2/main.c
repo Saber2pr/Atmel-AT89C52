@@ -15,7 +15,7 @@ unsigned char NL_list[LEN] = {NL_0, NL_1, NL_0, NL_5, NL_4, NL_2, NL_2, NL_1};
 
 void display(unsigned int current)
 {
-  NixieLight = OFF;
+  NixieLight = NL_OF;
   delay(100);
   NixieLight = NL_list[current];
 }

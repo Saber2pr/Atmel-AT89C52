@@ -22,7 +22,7 @@ void main()
       current = 0;
     }
 
-    NixieLight = OFF;
+    NixieLight = NL_OF;
     delay(SECOND);
     NixieLight = NL_list[current];
 
