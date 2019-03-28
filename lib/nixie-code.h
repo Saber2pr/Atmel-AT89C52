@@ -33,5 +33,9 @@
 #define NL_R 0x31
 #define NL_U 0x3E
 #define NL_Y 0x6E
+#define NL__ 0x40
+#define NL_ 0x80
+
+unsigned char NL_list[] = {NL_0, NL_1, NL_2, NL_3, NL_4, NL_5, NL_6, NL_7, NL_8, NL_9, NL_A, NL_B, NL_C, NL_D, NL_E, NL_F, NL_H, NL_L, NL_P, NL_R, NL_U, NL_Y};
 
 #endif // NIXIELIGHT

@@ -6,15 +6,14 @@
  */
 #include "../lib/REG51.H"
 #include "../lib/delay.h"
-#include "../lib/port.h"
+#include "../lib/INTRINS.H"
 
 void main()
 {
+  P2 = 0x7f;
   while (1)
   {
-    P2_0 = 0;
-    delay(10000);
-    P2_0 = 1;
+    P2 = _cror_(P2, 1);
     delay(10000);
   };
 }
