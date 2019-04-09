@@ -18,4 +18,14 @@ unsigned int length(unsigned int num)
   return result;
 }
 
+unsigned int get0(unsigned int num)
+{
+  return num % 10;
+}
+
+unsigned int get1(unsigned int num)
+{
+  return num / 10 % 10;
+}
+
 #endif // NUMBER

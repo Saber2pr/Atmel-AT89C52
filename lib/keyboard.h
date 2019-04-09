@@ -3,7 +3,6 @@
 #include "../lib/REG51.H"
 #include "./delay.h"
 
-#define GPIO_DIG P0
 #define GPIO_KEY P1
 
 unsigned int KeyDown(void)
